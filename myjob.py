@@ -1,6 +1,3 @@
-要将这个程序改成只调用一次，你需要移除 `threading.Timer` 相关的代码，并且确保 `getFilstList` 函数只被调用一次。以下是修改后的代码：
-
-```python
 import requests
 import json
 
