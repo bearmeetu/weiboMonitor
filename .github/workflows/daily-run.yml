@@ -2,7 +2,7 @@ name: Daily Run
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 每天午夜（UTC时间）执行
+    - cron: '0 12 * * *'  # 每天中午12点（UTC时间）执行
   workflow_dispatch:  # 允许手动触发
 
 jobs:
@@ -14,4 +14,4 @@ jobs:
         with:
           python-version: '3.x'  # 选择Python版本
       - run: pip install requests  # 安装依赖
-      - run: python myjob.py  # 运行你的Python脚本
+      - run: python path/to/your_script.py  # 运行你的Python脚本
