@@ -14,4 +14,4 @@ jobs:
         with:
           python-version: '3.x'  # 选择Python版本
       - run: pip install requests  # 安装依赖
-      - run: python path/to/your_script.py  # 运行你的Python脚本
+      - run: python myjob.py  # 运行你的Python脚本
